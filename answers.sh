@@ -31,3 +31,32 @@ SET Graduation ='08/09/2018'
 where name ='Layal';
 
 DELETE from students WHERE name = 'Layal';
+
+
+
+SELECT employees.Name, employees.Company, companies.Date
+from employees
+JOIN companies
+on employees.Company = companies.Name;
+
+
+
+
+
+
+SELECT max(points)
+ from students;
+
+ SELECT avg(Points)
+FROM students;
+
+
+SELECT count(id)
+from students
+where Points =500;
+
+SELECT name from students
+where name like '%s%';
+
+SELECT * FROM students
+ORDER by Points DESC;
