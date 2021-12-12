@@ -8,7 +8,26 @@ where name = "Alex";
  INSERT into students VALUES(7, 'Mayssam', 18, 'F', 370);
  UPDATE students
 set Points = '350'
-where points = '300';
+where name  = 'Basma';
 UPDATE students
 set Points = '170'
-where Points = '200';
+where  name = 'Alex';
+
+CREATE TABLE graduates(
+    Id INT AUTO_INCREMENT NOT NULL,
+    Name TEXT NOT NULL UNIQUE,
+    Age INT,
+    Gender TEXT,
+    Points INT,
+    Graduation date,
+    PRIMARY KEY(Id)
+);
+INSERT INTO graduates (id, name, age, Gender, Points)
+SELECT id, name, age, Gender, Points
+FROM students
+where name = 'Layal';
+UPDATE graduates 
+SET Graduation ='08/09/2018'
+where name ='Layal';
+
+DELETE from students WHERE name = 'Layal';
