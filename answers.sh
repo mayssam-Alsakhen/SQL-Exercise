@@ -66,3 +66,4 @@ where Points =500;
 SELECT name from students
 where name like '%s%';
 
+SELECT * FROM students ORDER BY Points DESC;
