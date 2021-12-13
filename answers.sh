@@ -33,6 +33,10 @@ where name ='Layal';
 DELETE from students WHERE name = 'Layal';
 
 
+SELECT employees.Name, employees.Company, companies.Date
+FROM employees
+JOIN companies
+ON employees.Company = companies.Name;
 
 SELECT employees.Name
 from employees
