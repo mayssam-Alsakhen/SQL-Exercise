@@ -34,13 +34,17 @@ DELETE from students WHERE name = 'Layal';
 
 
 
-SELECT employees.Name, employees.Company, companies.Date
+SELECT employees.Name
 from employees
 JOIN companies
-on employees.Company = companies.Name;
+on employees.Company = companies.Name
+where companies.Date < 2000
 
-
-
+SELECT companies.Name
+FROM companies
+JOIN employees
+ON employees.Company = companies.Name
+WHERE employees.Role = "Graphic Designer"; 
 
 
 
@@ -58,5 +62,3 @@ where Points =500;
 SELECT name from students
 where name like '%s%';
 
-SELECT * FROM students
-ORDER by Points DESC;
