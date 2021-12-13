@@ -52,10 +52,10 @@ WHERE employees.Role = "Graphic Designer";
 
 
 
-SELECT max(points)
+SELECT name,max(points)
  from students;
-
- SELECT avg(Points)
+ 
+SELECT avg(Points)
 FROM students;
 
 
